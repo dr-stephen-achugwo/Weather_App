@@ -35,3 +35,9 @@ function convertion(val){
         .catch(err => alert('You entered Wrong city name'))
     })
 
+    // Allow "Enter" key to trigger submit
+    inputval.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+        btn.click();
+        }
+    });
